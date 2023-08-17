@@ -11,7 +11,8 @@ import Popsidenavbar from "../component/popsidenavbar";
 import Blogcarousel from "../component/blogcarousel";
 import Gallerycarousel from "../component/gallerycarousel";
 import Footer from "../component/footer"
-import Chefcomment from "@/component/chefcomment";
+import Trending from "../component/Trending";
+import Chefcomment from "../component/chefcomment"
 
 export default dynamic(() => Promise.resolve(Home), { ssr: false });
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
     <Bottomnavbar/>
     {/* <Searchbox/> */}
     <Chefcomment/>
+    <Trending/>
     <Blogcarousel/>
     <Gallerycarousel/>
     <Footer/>
