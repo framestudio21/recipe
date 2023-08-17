@@ -213,18 +213,19 @@
                 align-items: flex-end;
                 justify-content: space-around;
                 font-size: 1.5rem;
-                text-transform: capitalize;
+                text-transform: lowercase;
                 letter-spacing: 2px;
                 font-weight: 900;
                 gap: 10px;
-                color: var(--yellow-color);
+                /* color: var(--yellow-color); */
+                color: #fff;
             }
             & .rightFooterBottomColum2 a{
               position: relative;
             }
             & .rightFooterBottomColum2 a:hover{
                 letter-spacing: 3px;
-                color: var(--orange-color);
+                /* color: var(--orange-color); */
             }
             & .rightFooterBottomColum2 a:hover::after{
               content: "";
