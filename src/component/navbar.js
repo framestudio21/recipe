@@ -8,7 +8,7 @@ export default function navbar() {
   return (
     <>
     <div className={styles.navbar}>
-        <Link href="/" className={styles.logo}>recipe.in</Link>
+        <Link href="/" className={styles.logo}>recipedairy.in</Link>
         <div className={styles.navbarlink}>
             <Link href="/" className={styles.navListItem}>Home</Link>
             <Link href="/blog" className={styles.navListItem}>Blog</Link>

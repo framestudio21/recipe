@@ -44,6 +44,22 @@ export default function blogcarousel() {
         </div>
       </div>
       </div>
+      <div className={styles.blogbody}>
+      <Image className={styles.blogimage} width={0} height={0} src={img}/>
+      <div className={styles.blogtext}>
+        <div className={styles.blogtitle}>
+        this salad is food for family
+        </div>
+        <div className={styles.blogparagraph}>
+          eating with your family is a traditionwhile going to a    eating with your family is a traditionwhile going to a    eating with your family is a traditionwhile going to a    eating with your family is a traditionwhile going to a 
+        </div>
+        <div className={styles.bloglink}>
+          <Link href="#">
+            read more ...
+          </Link>
+        </div>
+      </div>
+      </div>
     </div>
     <div className={styles.btn}>
       <Link href="/blog">
