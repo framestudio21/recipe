@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import styles from '../styles/trending.module.css'
+import styles from '@/component/styles/trending.module.css'
 export default function Trending() {
 
     useEffect(()=>{
