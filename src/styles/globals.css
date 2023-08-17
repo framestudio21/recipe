@@ -1,0 +1,46 @@
+:root {
+  --background-color: #f2f2f2;
+  --yellow-color: #feff86;
+  --red-color: #D71313;
+  --black-color: #1d0805;
+  --gray-color: #7a867a;
+  --orange-color: #ef7e4e;
+  --grayblue-color: #374552;
+  --blue-color: #252b48;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: var(--background-color);
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

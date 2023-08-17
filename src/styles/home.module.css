@@ -1,0 +1,12 @@
+.mainbody{
+    width: 100vw;
+    background-color: #e7e7e7;
+}
+.pagebody{
+    width: 80vw;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

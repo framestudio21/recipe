@@ -1,0 +1,58 @@
+.sidenavbar{
+    width: 100vw;
+    height: calc(100vh - 120px);
+    background: rgba(0, 0, 0, 0.2);
+    list-style: none;
+    overflow-y: scroll;
+    
+    & .sidenavbarlist{
+        width: 45rem;
+        height: calc(100vh - 120px);
+        background-color: #fff;
+        padding: 20px 20px 10px 50px;
+        position: relative;
+
+        & .closebtn{
+            position: absolute;
+            right: -5rem;
+            top: 1rem;
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 4rem;
+            /* color: red; */
+        }
+
+        & .sideNavbarlistItemDiv{
+            width: 100%;
+            margin-bottom: 2.5rem;
+            position: relative;
+
+            & .sideNavbarlistItemDivTitle{
+                font-size: 2.3rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 2px;
+                margin-bottom: 0.5rem;
+            }
+
+            & .sideNavbarItem{
+                font-weight: 200;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0.3rem;
+            }
+        }
+        & .sideNavbarlistItemDiv::after{
+            position: absolute;
+            content: " ";
+            height: 1px;
+            width: 100%;
+            background: #000;
+            bottom: -8px;
+        }
+    }
+}
