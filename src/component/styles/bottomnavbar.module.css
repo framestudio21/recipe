@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
-    background-color: #f1f1f1;
+    background-color: var(--grayblue-color);
+    color: #ffffff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 70px;
@@ -31,7 +32,7 @@
     & .listItem:hover::after{
         content: "";
         height: 1px;
-        background: #000;
+        background: #ffffff;
         position: absolute;
         left: 0;
         bottom: -5px;

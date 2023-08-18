@@ -41,7 +41,8 @@
    
     
     & .navbaricon{
-        background: var(--background-color);
+        background: var(--blue-color);
+        color: #fff;
         padding: 10px 20px;
         border-radius: 50px;
         gap: 25px;

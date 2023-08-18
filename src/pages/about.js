@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import Head from "next/head"
 
 import Navbar from "../component/navbar";
 import Bottomnavbar from "../component/bottomnavbar"
@@ -11,6 +12,12 @@ export default dynamic(() => Promise.resolve(About), { ssr: false });
 const About = () => {
   return (
     <>
+    <Head>
+        <title>RECIPE DAIRY</title>
+        <meta name="description" content="Generated & Created by Frame Studio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <Bottomnavbar/>
       <div className={styles.about}>
