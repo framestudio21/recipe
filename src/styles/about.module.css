@@ -24,6 +24,13 @@
         position: relative;
         height: initial;
         width: 42%;
+        .sideNavbarArrow{
+            color: #fff;
+            position: absolute;
+            left: 15px;
+            font-size: 2rem;
+            top: 30px;
+        }
     }
     & .sideNavbar::before{
         content: "";

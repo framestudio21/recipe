@@ -1,0 +1,60 @@
+.recipeTeam{
+    background: var(--yellow-color);
+    display: flex;
+    padding: 50px;
+
+    .left, .right{
+        width: 50%;
+    }
+
+    .left{
+        .paragraph{
+            margin: 20px 20px 20px 0;
+            line-height: 2.2rem;
+        }
+    }
+
+    .right{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .profile{
+            display: flex;
+            flex-direction: column;
+            width: calc(100% / 4);
+        }
+    }
+
+    .btn button{
+        border: none;
+        outline: none;
+        background: var(--grayblue-color);
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .btn button:first-child{
+        position: relative;
+    }
+    .btn button:first-child::after{
+        content: " ";
+        height: 10px;
+        width: 20px;
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translateY(-50%);
+        background: var(--grayblue-color);
+    }
+    .btn a:hover button:first-child::after{
+        background-color: var(--orange-color);
+    }
+    .btn a:hover button{
+        background-color: var(--orange-color);
+    }
+}

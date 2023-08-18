@@ -5,6 +5,7 @@ import Head from "next/head"
 import Navbar from "../component/navbar";
 import Bottomnavbar from "../component/bottomnavbar"
 import Footer from "../component/footer";
+import { VscTriangleRight } from 'react-icons/vsc'
 
 import styles from "../styles/about.module.css";
 
@@ -22,6 +23,7 @@ const About = () => {
       <Bottomnavbar/>
       <div className={styles.about}>
         <div className={styles.sideNavbar}>
+          <VscTriangleRight className={styles.sideNavbarArrow}/>
           <Link href="#" className={styles.list}>
             About Allrecipes
           </Link>
