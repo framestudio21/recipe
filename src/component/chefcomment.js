@@ -9,9 +9,6 @@ export default function chefcomment() {
   return (
     <>
     <div className={styles.chefcomment}>
-        <div className={styles.chefcommentTitle}>
-            what they say
-        </div>
         <div className={styles.commentbody}>
             <div className={styles.commentimagebody}>
               <Image width={0} height={0} className={styles.image} src={img}/>

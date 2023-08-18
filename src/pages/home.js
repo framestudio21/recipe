@@ -13,7 +13,8 @@ import Gallerycarousel from "../component/gallerycarousel";
 import Footer from "../component/footer"
 import Trending from "../component/Trending";
 import Chefcomment from "../component/chefcomment"
-// import RecipeTeam from "../component/RecipeTeam"
+import Herorecipe from "../component/herorecipe"
+import RecipeTeam from "../component/RecipeTeam"
 
 export default dynamic(() => Promise.resolve(Home), { ssr: false });
 const Home = () => {
@@ -22,7 +23,8 @@ const Home = () => {
     <Navbar/>
     <Bottomnavbar/>
     {/* <Searchbox/> */}
-    {/* <RecipeTeam/> */}
+    <RecipeTeam/>
+    <Herorecipe/>
     <Chefcomment/>
     <Trending/>
     <Blogcarousel/>

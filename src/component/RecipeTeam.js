@@ -35,9 +35,10 @@ export default function RecipeTeam() {
             objectFit="cover"
             src={img}
             alt="img"
+            className={styles.image}
           />
-          <p>Name</p>
-          <p>Position</p>
+          <p className={styles.name}>Name</p>
+          <p className={styles.position}>Position</p>
         </div>
 
         <div className={styles.profile}>
@@ -47,9 +48,10 @@ export default function RecipeTeam() {
             objectFit="cover"
             src={img}
             alt="img"
+            className={styles.image}
           />
-          <p>Name</p>
-          <p>Position</p>
+          <p className={styles.name}>Name</p>
+          <p className={styles.position}>Position</p>
         </div>
 
         <div className={styles.profile}>
@@ -59,9 +61,10 @@ export default function RecipeTeam() {
             objectFit="cover"
             src={img}
             alt="img"
+            className={styles.image}
           />
-          <p>Name</p>
-          <p>Position</p>
+          <p className={styles.name}>Name</p>
+          <p className={styles.position}>Position</p>
         </div>
 
         <div className={styles.profile}>
@@ -71,9 +74,10 @@ export default function RecipeTeam() {
             objectFit="cover"
             src={img}
             alt="img"
+            className={styles.image}
           />
-          <p>Name</p>
-          <p>Position</p>
+          <p className={styles.name}>Name</p>
+          <p className={styles.position}>Position</p>
         </div>
 
         <div className={styles.profile}>
@@ -83,9 +87,10 @@ export default function RecipeTeam() {
             objectFit="cover"
             src={img}
             alt="img"
+            className={styles.image}
           />
-          <p>Name</p>
-          <p>Position</p>
+          <p className={styles.name}>Name</p>
+          <p className={styles.position}>Position</p>
         </div>
 
         <div className={styles.profile}>
@@ -95,9 +100,10 @@ export default function RecipeTeam() {
             objectFit="cover"
             src={img}
             alt="img"
+            className={styles.image}
           />
-          <p>Name</p>
-          <p>Position</p>
+          <p className={styles.name}>Name</p>
+          <p className={styles.position}>Position</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,8 @@
 .recipeTeam{
-    background: var(--yellow-color);
+    background: url('../../image/vegetablebg4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     display: flex;
     padding: 50px;
 
@@ -9,8 +12,9 @@
 
     .left{
         .paragraph{
-            margin: 20px 20px 20px 0;
+            margin: 20px 0;
             line-height: 2.2rem;
+            text-align: justify;
         }
     }
 
@@ -18,10 +22,31 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        justify-content: center;
         .profile{
             display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             flex-direction: column;
             width: calc(100% / 4);
+            cursor: pointer;
+            .name{
+                color: var(--orange-color);
+                margin: 5px 0;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            .position{
+                color: var(--blue-color);
+            }
+            .name:hover{
+                text-decoration: underline;
+            }
+            .image{
+                border-radius: 100%;
+                border: 1px solid var(--orange-color);
+            }
         }
     }
 
