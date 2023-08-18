@@ -1,17 +1,20 @@
 .herorecipe{
     width: 100%;
     padding: 0 50px;
-    margin: 20px 0;
+    /* margin: 20px 0 0 0; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: url("../../image/bgvegetable2.svg");
+    background-size: contain;
+    height: 540px;
 
     & .herorecipeTop{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100px;
 
         & .herorecipeTitle{
             font-weight: 900;
@@ -30,15 +33,114 @@
                 border-radius: 50px;
                 border: 2px solid var(--grayblue-color);
                 outline: none;
-                background: var(--background-color);
+                background: var(--blue-color);
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 font-weight: 200;
                 cursor: text;
+                color: #fff;
             }
             & .searchbox::placeholder{
                 text-transform: lowercase;
+                color: #fff;
             }
+            & .searchbox:hover{
+                box-shadow: var(--orange-color) 5px 5px;
+            }
+        }
+    }
+
+    & .herorecipeBottom{
+        width: 100%;
+        height: 440px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        & .herorecipeBottomLeft{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 23px;
+            width: 30%;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            height: 100%;
+            padding: 20px 0 20px 0;
+
+            & .recipeIconDiv{
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 20px;
+                border: 2px solid var(--grayblue-color);
+                /* border-radius: 60px; */
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, 0.5);
+
+                & .recipeIcon{
+                    width: 60px;
+                    height: 60px;
+                    background-color: var(--grayblue-color);
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & .iconBody{
+                        font-size: 3rem;
+                        color: #fff;
+                    }
+                }
+                & .recipeIconTitle{
+                    text-transform: uppercase;
+                    font-weight: 200;
+                    letter-spacing: 3px;
+                    font-size: 2rem;
+                }
+            }
+            & .recipeIconDiv:hover{
+                background: var(--blue-color);
+                color: #fff;
+                box-shadow: var(--orange-color) 10px 10px;
+                & .recipeIcon{
+                    background: #fff;
+                    & .iconBody{
+                        color: var(--blue-color);
+                    }
+                }
+                & .recipeIconTitle{
+                    letter-spacing: 4px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    & .herorecipeBottom{
+
+        & .herorecipeBottomMiddle{
+            width: 40%;
+            height: 100%;
+            /* background: #000; */
+            border-radius: 20px;
+            padding: 50px 0;
+
+            & .image{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    & .herorecipeBottom{
+
+        & .herorecipeBottomRight{
+            width: 30%;
+            height: 100%;
         }
     }
 }

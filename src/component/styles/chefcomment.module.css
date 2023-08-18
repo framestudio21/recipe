@@ -1,6 +1,8 @@
 .chefcomment{
     width: 100%;
     padding: 40px 0;
+    /* background: url("../../image/bgvegetable2.svg"); */
+
 
     & .commentbody{
         width: 70vw;
