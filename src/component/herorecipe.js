@@ -73,26 +73,138 @@ export default function herorecipe() {
                 </div>
 
             </div>
+
             <div className={style.herorecipeBottomMiddle}>
                 <Image width={0} height={0} className={style.image} src={img}/>
             </div>
+
             <div className={style.herorecipeBottomRight}>
+
                 <div className={style.recipeDetailDiv}>
                     <div className={style.recipeDetailDivTop}>
                         Russian Salad
                     </div>
+                    <div className={style.recipeDetailDivMiddle}></div>
                     <div className={style.recipeDetailDivBottom}>
                         <div className={style.recipeDetailDivBottomLeft}>
-                            <div className={style.recipeDetailDivBottomLeftTitle}></div>
+                            <div className={style.recipeDetailDivBottomLeftTitle}>serving</div>
                             <div className={style.recipeDetailDivBottomLeftIcon}>
                                 <BiSolidUser className={style.icon}/>
                                 <BiSolidUser className={style.icon}/>
                             </div>
                         </div>
                         <div className={style.recipeDetailDivBottomMiddle}></div>
-                        <div className={style.recipeDetailDivBottomRight}></div>
+                        <div className={style.recipeDetailDivBottomRight}>
+                            <div className={style.recipeDetailDivBottomRightTop}>
+                                cook time
+                            </div>
+                            <div className={style.recipeDetailDivBottomRightBottom}>
+                                1h30min
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div className={style.recipeDetailDiv}>
+                    <div className={style.recipeDetailDivTop}>
+                        Russian Salad
+                    </div>
+                    <div className={style.recipeDetailDivMiddle}></div>
+                    <div className={style.recipeDetailDivBottom}>
+                        <div className={style.recipeDetailDivBottomLeft}>
+                            <div className={style.recipeDetailDivBottomLeftTitle}>serving</div>
+                            <div className={style.recipeDetailDivBottomLeftIcon}>
+                                <BiSolidUser className={style.icon}/>
+                                <BiSolidUser className={style.icon}/>
+                            </div>
+                        </div>
+                        <div className={style.recipeDetailDivBottomMiddle}></div>
+                        <div className={style.recipeDetailDivBottomRight}>
+                            <div className={style.recipeDetailDivBottomRightTop}>
+                                cook time
+                            </div>
+                            <div className={style.recipeDetailDivBottomRightBottom}>
+                                1h30min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div className={style.recipeDetailDiv}>
+                    <div className={style.recipeDetailDivTop}>
+                        Russian Salad
+                    </div>
+                    <div className={style.recipeDetailDivMiddle}></div>
+                    <div className={style.recipeDetailDivBottom}>
+                        <div className={style.recipeDetailDivBottomLeft}>
+                            <div className={style.recipeDetailDivBottomLeftTitle}>serving</div>
+                            <div className={style.recipeDetailDivBottomLeftIcon}>
+                                <BiSolidUser className={style.icon}/>
+                                <BiSolidUser className={style.icon}/>
+                            </div>
+                        </div>
+                        <div className={style.recipeDetailDivBottomMiddle}></div>
+                        <div className={style.recipeDetailDivBottomRight}>
+                            <div className={style.recipeDetailDivBottomRightTop}>
+                                cook time
+                            </div>
+                            <div className={style.recipeDetailDivBottomRightBottom}>
+                                1h30min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div className={style.recipeDetailDiv}>
+                    <div className={style.recipeDetailDivTop}>
+                        Russian Salad
+                    </div>
+                    <div className={style.recipeDetailDivMiddle}></div>
+                    <div className={style.recipeDetailDivBottom}>
+                        <div className={style.recipeDetailDivBottomLeft}>
+                            <div className={style.recipeDetailDivBottomLeftTitle}>serving</div>
+                            <div className={style.recipeDetailDivBottomLeftIcon}>
+                                <BiSolidUser className={style.icon}/>
+                                <BiSolidUser className={style.icon}/>
+                            </div>
+                        </div>
+                        <div className={style.recipeDetailDivBottomMiddle}></div>
+                        <div className={style.recipeDetailDivBottomRight}>
+                            <div className={style.recipeDetailDivBottomRightTop}>
+                                cook time
+                            </div>
+                            <div className={style.recipeDetailDivBottomRightBottom}>
+                                1h30min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div className={style.recipeDetailDiv}>
+                    <div className={style.recipeDetailDivTop}>
+                        Russian Salad
+                    </div>
+                    <div className={style.recipeDetailDivMiddle}></div>
+                    <div className={style.recipeDetailDivBottom}>
+                        <div className={style.recipeDetailDivBottomLeft}>
+                            <div className={style.recipeDetailDivBottomLeftTitle}>serving</div>
+                            <div className={style.recipeDetailDivBottomLeftIcon}>
+                                <BiSolidUser className={style.icon}/>
+                                <BiSolidUser className={style.icon}/>
+                            </div>
+                        </div>
+                        <div className={style.recipeDetailDivBottomMiddle}></div>
+                        <div className={style.recipeDetailDivBottomRight}>
+                            <div className={style.recipeDetailDivBottomRightTop}>
+                                cook time
+                            </div>
+                            <div className={style.recipeDetailDivBottomRightBottom}>
+                                1h30min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

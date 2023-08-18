@@ -7,7 +7,7 @@
     justify-content: space-between;
     background: url("../../image/bgvegetable2.svg");
     background-size: contain;
-    height: 540px;
+    height: 600px;
 
     & .herorecipeTop{
         width: 100%;
@@ -52,10 +52,10 @@
 
     & .herorecipeBottom{
         width: 100%;
-        height: 440px;
+        height: 500px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: 10px;
 
         & .herorecipeBottomLeft{
@@ -63,14 +63,14 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 23px;
-            width: 30%;
+            width: 25%;
             overflow-y: scroll;
             scroll-behavior: smooth;
             height: 100%;
             padding: 20px 0 20px 0;
 
             & .recipeIconDiv{
-                width: 70%;
+                width: 90%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -122,7 +122,7 @@
     & .herorecipeBottom{
 
         & .herorecipeBottomMiddle{
-            width: 40%;
+            width: 45%;
             height: 100%;
             /* background: #000; */
             border-radius: 20px;
@@ -141,6 +141,116 @@
         & .herorecipeBottomRight{
             width: 30%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: space-evenly; */
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            /* padding: ; */
+            /* background: #000; */
+            gap: 10px;
+            padding: 0 20px;
+
+            & .recipeDetailDiv{
+                width: 95%;
+                border: 3px solid var(--blue-color);
+                border-radius: 20px;
+                background-color: var(--blue-color);
+                color: #fff;
+                padding: 15px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                /* margin-top: 20px; */
+                margin: 10px 0;
+
+                & .recipeDetailDivTop{
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                }
+                & .recipeDetailDivMiddle{
+                    content: " ";
+                    width: 100%;
+                    height: 1px;
+                    background: #ffffff;
+                    border-radius: 20px;
+                    margin: 10px 0;
+                }
+
+                & .recipeDetailDivBottom{
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    & .recipeDetailDivBottomLeft{
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        letter-spacing: 2px;
+                        text-align: center;
+
+                        & .recipeDetailDivBottomLeftIcon{
+                            margin-top: 10px;
+                            & .icon{
+                                font-size: 2rem
+                            }
+                        }
+                    }
+
+                    & .recipeDetailDivBottomMiddle{
+                        content: " ";
+                width: 2px;
+                height: 100%;
+                background: #ffffff;
+                border-radius: 20px;
+                margin: 0 10px;
+                    }
+
+                    & .recipeDetailDivBottomRight{
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        letter-spacing: 2px;
+                        text-align: center;
+
+                        & .recipeDetailDivBottomRightBottom{
+                            margin-top: 10px;
+                            font-weight: 200;
+                            letter-spacing: 4px;
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+
+            & .recipeDetailDiv:hover{
+                border: 3px solid var(--grayblue-color);
+                background-color: var(--background-color);
+                color: var(--grayblue-color);
+                box-shadow: var(--orange-color) 10px 10px;
+                /* margin-bottom: 5px; */
+
+                & .recipeDetailDivTop{
+                    font-weight: 900;
+                    text-align: center;
+                }
+
+                & .recipeDetailDivMiddle{
+                    background: var(--orange-color);
+                    height: 2px;
+                }
+
+                & .recipeDetailDivBottom{
+
+                    & .recipeDetailDivBottomMiddle{
+                        background: var(--orange-color);
+                        width: 3px;
+                    }
+                }
+            }
         }
+
     }
 }
