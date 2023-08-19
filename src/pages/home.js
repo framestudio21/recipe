@@ -11,28 +11,32 @@ import Popsidenavbar from "../component/popsidenavbar";
 import Blogcarousel from "../component/blogcarousel";
 import Gallerycarousel from "../component/gallerycarousel";
 import Footer from "../component/footer"
-import Trending from "../component/Trending";
+import Trending from "../component/trending";
 import Chefcomment from "../component/chefcomment"
 import Herorecipe from "../component/herorecipe"
 import RecipeTeam from "../component/recipeteam"
-import TrendingRecipes from "@/component/trendingRecipes";
+import TrendingRecipes from "../component/trendingrecipes";
+import Whatnew from "../component/whatnew"
+import Hero from "../component/hero"
 
 
 export default dynamic(() => Promise.resolve(Home), { ssr: false });
 const Home = () => {
   return (
     <>
-    {/* <Navbar/> */}
-    {/* <Bottomnavbar/> */}
+    <Navbar/>
+    <Bottomnavbar/>
     {/* <Searchbox/> */}
-    {/* <TrendingRecipes/> */}
+    <Hero/>
+    <Whatnew/>
+    <TrendingRecipes/>
     <RecipeTeam/>
-    {/* <Herorecipe/> */}
-    {/* <Chefcomment/> */}
-    {/* <Trending/> */}
-    {/* <Blogcarousel/> */}
-    {/* <Gallerycarousel/> */}
-    {/* <Footer/> */}
+    <Herorecipe/>
+    <Chefcomment/>
+    <Trending/>
+    <Blogcarousel/>
+    <Gallerycarousel/>
+    <Footer/>
     </>
   )
 }

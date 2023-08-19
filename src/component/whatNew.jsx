@@ -1,4 +1,4 @@
-import styles from './styles/whatNew.module.css'
+import styles from './styles/whatnew.module.css'
 import Image from 'next/image'
 import img from "../image/food.jpg"
 import { BsArrowRightShort } from 'react-icons/bs'

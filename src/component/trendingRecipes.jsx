@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import img from '@/image/food.jpg'
-import styles from './styles/trendingRecipes.module.css'
+import img from '../image/food.jpg'
+import styles from './styles/trendingrecipes.module.css'
 
 export default function trendingRecipes() {
   return (
@@ -55,47 +55,6 @@ export default function trendingRecipes() {
                 <p className={styles.rating}>736 Ratings</p>
             </div>
 
-            <div className={styles.container}>
-                <Image
-                    width={250}
-                    height={160}
-                    objectFit="cover"
-                    src={img}
-                    alt="img"
-                    className={styles.img}
-                />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
-            </div>
-
-            <div className={styles.container}>
-                <Image
-                    width={250}
-                    height={160}
-                    objectFit="cover"
-                    src={img}
-                    alt="img"
-                    className={styles.img}
-                />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
-            </div>
-
-            <div className={styles.container}>
-                <Image
-                    width={250}
-                    height={160}
-                    objectFit="cover"
-                    src={img}
-                    alt="img"
-                    className={styles.img}
-                />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
-            </div>
         </div>
     </div>
   )
