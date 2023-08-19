@@ -104,7 +104,7 @@ const About = () => {
               levels.
             </p>
             <h4>Above all, we are:</h4>
-            <ul>
+            <ul className={styles.ul}>
               <li className={styles.paragraph}>
                 <strong>Friendly</strong> We love trading ideas and hanging out
                 with fellow home cooks.
@@ -211,7 +211,7 @@ const About = () => {
               edit for Allrecipes style. Each recipe undergoes a series of
               reviews for:
             </p>
-            <ul>
+            <ul className={styles.ul}>
               <li className={styles.paragraph}>
                 <strong>Duplication:</strong> Editors verify that the recipe
                 doesn't duplicate another that has already been published.
