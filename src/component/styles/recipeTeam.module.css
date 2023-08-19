@@ -32,7 +32,6 @@
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
-        /* background-color: rgba(0, 0, 0, 0.5); */
         background: url("../../image/bgvegetable.svg"), var(--blue-color);
         background-size: cover;
         border-radius: 20px;
@@ -101,5 +100,22 @@
     }
     .btn a:hover button{
         background-color: var(--orange-color);
+    }
+
+    @media (width <= 600px){
+        flex-direction: column;
+        padding: 1.5rem;
+        background: none;
+        .left{
+            width: 100%;
+        }
+        .right{
+            width: calc(100% - 1rem);
+            margin-bottom: 2rem;
+            .profile{
+                width: calc(100% / 2 - 2rem);
+            }
+        }
+
     }
 }
