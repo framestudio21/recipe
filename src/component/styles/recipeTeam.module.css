@@ -1,5 +1,5 @@
 .recipeTeam{
-    background: url('../../image/vegetablebg4.png'), var(--background-color);
+    background: url('../../image/vegetablebg4.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -101,9 +101,5 @@
     }
     .btn a:hover button{
         background-color: var(--orange-color);
-    }
-    @media (width <= 600px){
-        padding: 1.5rem;
-        flex-direction: column;
     }
 }

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import img from '@/image/food.jpg'
-import styles from './styles/trendingRecipes.module.css'
+import styles from './styles/trendingrecipes.module.css'
 
 export default function trendingRecipes() {
   return (
