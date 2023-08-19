@@ -6,7 +6,7 @@ import Navbar from "../component/navbar";
 import Bottomnavbar from "../component/bottomnavbar"
 import Footer from "../component/footer";
 import { VscTriangleRight } from 'react-icons/vsc'
-import TrendingRecipes from "@/component/trendingRecipes";
+
 import WhatNew from '@/component/whatNew'
 
 import styles from "../styles/about.module.css";
@@ -24,7 +24,7 @@ const About = () => {
       <Navbar />
       <Bottomnavbar/>
       <WhatNew/>
-      <TrendingRecipes/>
+
       <div className={styles.about}>
         <div className={styles.sideNavbar}>
           <VscTriangleRight className={styles.sideNavbarArrow}/>

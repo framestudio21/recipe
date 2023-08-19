@@ -20,7 +20,7 @@ export default function recipeteam() {
         </p>
         <div className={styles.btn}>
           <Link href="/blog">
-            <button>more blog</button>
+            <button>About us</button>
             <button className={styles.btnicon}>
               <BsArrowUpRight />
             </button>
