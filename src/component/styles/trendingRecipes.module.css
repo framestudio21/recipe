@@ -37,7 +37,7 @@
         }
     }
     @media (width <= 600px){
-        padding: 1rem;
+        padding: 1.5rem;
         .top{
             height: 20rem;
             padding: 1rem;

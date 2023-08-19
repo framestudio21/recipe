@@ -8,6 +8,7 @@ import Footer from "../component/footer";
 import { VscTriangleRight } from 'react-icons/vsc'
 
 import WhatNew from '@/component/whatNew'
+import Hero from '@/component/Hero'
 
 import styles from "../styles/about.module.css";
 
@@ -23,6 +24,8 @@ const About = () => {
       </Head>
       <Navbar />
       <Bottomnavbar/>
+
+      <Hero/>
       <WhatNew/>
 
       <div className={styles.about}>

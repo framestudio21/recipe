@@ -1,5 +1,6 @@
 .whatNew {
   padding: 2rem 5rem;
+  background: #fff;
   .heading {
     text-align: center;
     margin: 1.5rem 0;
@@ -34,7 +35,7 @@
     }
   }
   @media (width <= 600px) {
-    padding: 1rem;
+    padding: 1.5rem;
     .bottom {
       gap: 1rem;
       .container {
