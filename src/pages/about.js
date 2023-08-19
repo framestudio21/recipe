@@ -366,7 +366,7 @@ const About = () => {
             <h4 className={styles.author}></h4>
             <p className={styles.position}></p>
             {/* <Image/> */}
-            <ol>
+            <ol className={styles.ul}>
               <li className={styles.paragraph}>
                 Molly has been in the digital media lifestyle space since 2010;
                 she joined Dotdash in 2013, where she has managed and launched a
