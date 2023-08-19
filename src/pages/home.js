@@ -22,17 +22,17 @@ export default dynamic(() => Promise.resolve(Home), { ssr: false });
 const Home = () => {
   return (
     <>
-    <Navbar/>
-    <Bottomnavbar/>
+    {/* <Navbar/> */}
+    {/* <Bottomnavbar/> */}
     {/* <Searchbox/> */}
-    <TrendingRecipes/>
+    {/* <TrendingRecipes/> */}
     <RecipeTeam/>
-    <Herorecipe/>
-    <Chefcomment/>
-    <Trending/>
-    <Blogcarousel/>
-    <Gallerycarousel/>
-    <Footer/>
+    {/* <Herorecipe/> */}
+    {/* <Chefcomment/> */}
+    {/* <Trending/> */}
+    {/* <Blogcarousel/> */}
+    {/* <Gallerycarousel/> */}
+    {/* <Footer/> */}
     </>
   )
 }

@@ -102,4 +102,8 @@
     .btn a:hover button{
         background-color: var(--orange-color);
     }
+    @media (width <= 600px){
+        padding: 1.5rem;
+        flex-direction: column;
+    }
 }

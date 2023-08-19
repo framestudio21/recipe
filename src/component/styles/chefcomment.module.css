@@ -1,7 +1,6 @@
 .chefcomment{
     width: 100%;
     padding: 40px 0;
-    /* background: url("../../image/bgvegetable2.svg"); */
 
 
     & .commentbody{
@@ -60,6 +59,31 @@
                     letter-spacing: 2px;
                     font-weight: 200;
                     font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    @media (width <= 600px){
+        padding: 1rem;
+        .commentbody{
+            width: 90%;
+            padding: 2rem;
+            justify-content: space-between;
+            .commentimagebody{
+                width: 45%;
+            }
+            .commenttextbody{
+                height: 100%;
+                width: 50%;
+                .text{
+                    text-align: left;
+                }
+                .author{
+                    text-align: right;
+                    .name{
+                        margin: 1rem 0;
+                    }
                 }
             }
         }

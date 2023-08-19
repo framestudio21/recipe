@@ -137,4 +137,12 @@
             box-shadow: var(--grayblue-color) 0px 20px 30px -10px;
         }
     }
+
+    @media (width <= 600px){
+        padding: 1.5rem;
+        .gallerybody{
+            gap: 1.5rem;
+            grid-template-rows: repeat(8, 70px);
+        }
+    }
 }
