@@ -67,7 +67,7 @@
         /* background: url("../image/vegetablebg.png"), var(--blue-color); */
         /* background: url("../image/bgvegetable.svg"), var(--grayblue-color); */
         color: #000000;
-        background-size: contain;
+        /* background-size: contain; */
         border-radius: 0 0 20px 20px;
         .component{
             margin: 15px 0;
@@ -76,6 +76,20 @@
                 text-align: justify;
                 line-height: 2.2rem;
             }
+            .ul{
+                margin-left: 15px;
+            }
+        }
+    }
+    @media (width <= 600px) {
+        padding: 1rem;
+        height: initial;
+        .sideNavbar{
+            display: none;
+        }
+        .main{
+            padding: 0 1rem;
+            overflow: initial;
         }
     }
 }

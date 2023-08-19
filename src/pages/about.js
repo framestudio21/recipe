@@ -102,7 +102,7 @@ const About = () => {
               levels.
             </p>
             <h4>Above all, we are:</h4>
-            <ul>
+            <ul className={styles.ul}>
               <li className={styles.paragraph}>
                 <strong>Friendly</strong> We love trading ideas and hanging out
                 with fellow home cooks.
@@ -209,7 +209,7 @@ const About = () => {
               edit for Allrecipes style. Each recipe undergoes a series of
               reviews for:
             </p>
-            <ul>
+            <ul className={styles.ul}>
               <li className={styles.paragraph}>
                 <strong>Duplication:</strong> Editors verify that the recipe
                 doesn't duplicate another that has already been published.
@@ -364,7 +364,7 @@ const About = () => {
             <h4 className={styles.author}></h4>
             <p className={styles.position}></p>
             {/* <Image/> */}
-            <ol>
+            <ol className={styles.ul}>
               <li className={styles.paragraph}>
                 Molly has been in the digital media lifestyle space since 2010;
                 she joined Dotdash in 2013, where she has managed and launched a
