@@ -19,6 +19,7 @@
         margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         gap: 2.5rem;
         .container{
             width: calc((100% / 3) - 2rem);
