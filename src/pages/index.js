@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from "./home"
+import About from "./about"
 
 export default dynamic(() => Promise.resolve(Index), { ssr: false });
 function Index() {
@@ -17,6 +18,7 @@ function Index() {
       <Router>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
     </Router>
     </>

@@ -1,12 +1,13 @@
 .blogcarouselbody{
     width: 100%;
-    padding: 0 50px;
+    /* height: 500px; */
+    padding: 20px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: url("../../image/vegetablebg.png");
     background-size: cover;
-    gap: 30px;
+    gap: 50px;
 
     & .title{
         text-transform: uppercase;
@@ -21,16 +22,20 @@
         align-items: center;
         justify-content: space-around;
         width: 100%;
+        /* margin-bottom: 12px; */
 
         & .blogbody{
             width: calc(100% / 3);
             background-color: var(--background-color);
-            border-radius: 12px;
+        border-radius: 12px;
+        background-color: var(--blue-color);
+        border: 3px solid transparent;
+
 
             & .blogimage{
                 width: 100%;
-                height: 300px;
-                border-radius: 12px 12px 0 0;
+                height: 200px;
+                border-radius: 10px 10px 0 0;
             }
 
 
@@ -39,36 +44,56 @@
 
                 & .blogtitle{
                     text-transform: uppercase;
-                    letter-spacing: 2px;
+                    letter-spacing: 1px;
                     font-weight: 900;
                     font-size: 1.8rem;
-                    color: var(--blue-color);
+                    color: var(--background-color);
                 }
                 & .blogparagraph{
                     margin: 10px 0;
                     text-align: justify;
-                    font-size: 12px;
+                    font-size: 13px;
                     overflow: hidden;
                     display: -webkit-box;
-                    -webkit-line-clamp: 2;
+                    -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
-                    -moz-line-clamp: 2;
+                    -moz-line-clamp: 3;
                     -moz-box-orient: vertical;
+                    letter-spacing: 1px;
+                    color: var(--background-color);
                 }
                 & .bloglink{
                     font-weight: 900;
                     letter-spacing: 3px;
                     text-transform: lowercase;
-                    color: var(--blue-color);
+                    color: var(--background-color);
                     font-size: 1.5rem;
                 }
                 & .bloglink:hover{
-                    color: var(--orange-color);
+                    color: var(--red-color);
                 }
             }
         }
         & .blogbody:hover{
-            box-shadow: var(--orange-color) 8px 8px;
+            box-shadow: var(--orange-color) 10px 10px;
+            background-color: var(--background-color);
+        border: 3px solid var(--blue-color);
+            color: #fff;
+
+            /* & .blogimage{
+            box-shadow: var(--blue-color) 0 3px;
+            } */
+            & .blogtitle{
+                color: var(--blue-color);
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            & .blogparagraph{
+                color: var(--blue-color);
+            }
+            & .bloglink{
+                color: var(--orange-color);
+            }
         }
     }
     

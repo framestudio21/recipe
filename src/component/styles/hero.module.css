@@ -1,12 +1,13 @@
 .hero{
     display: flex;
     overflow: hidden;
+    height: calc(100vh - 120px);
     .left{
         width: 65%;
         background: var(--yellow-color);
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: flex-end;
         .outter{
             width: 50%;
             margin-bottom: 5rem;
@@ -55,17 +56,19 @@
     .right{
         width: 45%;
         padding: 0 2rem;
-        height: 70vh;
+        height: calc(100vh - 120px);
         background: var(--blue-color);
         .heading{
             text-align: center;
+            letter-spacing: 4px;
             margin: 2rem 0;
             font-size: 3rem;
             color: #fff;
-            text-transform: capitalize;
+            text-transform: uppercase;
+            font-weight: 900;
             text-decoration: underline;
-            text-underline-offset: 20%;
-            text-decoration-color: var(--orange-color) ;
+            /* text-underline-offset: 10%; */
+            text-decoration-color: var(--background-color) ;
         }
         .icon{
             color: var(--orange-color);
@@ -80,7 +83,9 @@
             justify-content: space-between;
             gap: 2rem;
             height: 100%;
-            overflow: scroll;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
             color: #fff;
             padding-bottom: 15vh;
         }

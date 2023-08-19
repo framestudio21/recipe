@@ -5,10 +5,10 @@ import Head from "next/head"
 import Navbar from "../component/navbar";
 import Bottomnavbar from "../component/bottomnavbar"
 import Footer from "../component/footer";
-import { VscTriangleRight } from 'react-icons/vsc'
+import { VscTriangleRight } from 'react-icons/vsc';
 
-import Whatnew from '@/component/whatnew'
-import Hero from '@/component/Hero'
+import Whatnew from '../component/whatnew';
+import Hero from '../component/hero';
 
 import styles from "../styles/about.module.css";
 
