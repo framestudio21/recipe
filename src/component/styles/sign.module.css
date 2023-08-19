@@ -1,0 +1,55 @@
+.signForm{
+    display: flex;
+    margin: 2.5rem auto;
+    width: 70%;
+    .img{
+        width: 40%;
+    }
+    .form{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        .container{
+            margin: .5rem auto;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            .label{
+                margin-bottom: 0.5rem;
+            }
+            .input{
+                outline: none;
+                padding: 1rem;
+                border: 1px solid #000;
+                border-radius: 6px;
+            }
+            .resetPass{
+                color: var(--red-color);
+                text-decoration: underline;
+            }
+        }
+        .btn{
+            width: 40%;
+            padding: 1rem;
+            border: none;
+            background: var(--orange-color);
+            color: #fff;
+            font-weight: 700;
+            border-radius: 6px;
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media (width <= 600px){
+        width: 90%;
+        .img{
+            display: none;
+        }
+        .form{
+            width: 100%;
+            .container{
+                width: 100%;
+            }
+        }
+    }
+}
