@@ -1,0 +1,38 @@
+.trendingRecipes{
+    padding: 2rem 5rem;
+    .top{
+        width: 100%;
+        height: 30rem;
+        background-image: url('../../image/vegetablebg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 5rem;
+        .container{
+            background: var(--blue-color);
+            display: inline-block;
+            padding: 3rem;
+            color: #fff;
+        }
+    }
+    .bottom{
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        .container{
+            width: calc((100% / 3) - 2rem);
+            .img{
+                width: 100% !important;
+            }
+            .tag{
+                text-transform: uppercase;
+                margin: .5rem 0;
+            }
+            .recipeName{
+                margin-bottom: .5rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
