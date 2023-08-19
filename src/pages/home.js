@@ -27,13 +27,13 @@ const Home = () => {
     <Navbar/>
     <Bottomnavbar/>
     {/* <Searchbox/> */}
-    {/* <TrendingRecipes/> */}
-    <Recipeteam/>
-    {/* <Herorecipe/> */}
-    {/* <Chefcomment/> */}
-    {/* <Trending/> */}
-    {/* <Blogcarousel/> */}
-    {/* <Gallerycarousel/> */}
+    <TrendingRecipes/>
+    <RecipeTeam/>
+    <Herorecipe/>
+    <Chefcomment/>
+    <Trending/>
+    <Blogcarousel/>
+    <Gallerycarousel/>
     {/* <Footer/> */}
     </>
   )
