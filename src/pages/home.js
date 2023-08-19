@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 
-import styles from "../styles/home.module.css"
+// import styles from "../styles/home.module.css"
 
 import Navbar from "../component/navbar";
 import Searchbox from "../component/searchbox";
@@ -17,7 +17,6 @@ import Herorecipe from "../component/herorecipe"
 import RecipeTeam from "../component/recipeteam"
 import TrendingRecipes from "@/component/trendingrecipes";
 import Hero from "../component/hero"
-import Herorecipe from "../component/herorecipe";
 
 
 export default dynamic(() => Promise.resolve(Home), { ssr: false });
@@ -31,7 +30,7 @@ const Home = () => {
     <RecipeTeam/>
     <Herorecipe/>
     <Chefcomment/>
-    <Trending/>
+    {/* <Trending/> */}
     <Blogcarousel/>
     <Gallerycarousel/>
     <Footer/>

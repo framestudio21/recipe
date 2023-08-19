@@ -19,7 +19,6 @@
     .bottom{
         margin-top: 2rem;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         gap: 2.5rem;
         .container{
@@ -39,6 +38,7 @@
     }
     @media (width <= 600px){
         padding: 1.5rem;
+        height: 10rem;
         .top{
             height: 20rem;
             padding: 1rem;
