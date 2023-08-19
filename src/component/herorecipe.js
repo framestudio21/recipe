@@ -32,9 +32,44 @@ export default function herorecipe() {
 
                 <div className={style.recipeIconDiv}>
                     <div className={style.recipeIcon}>
-                            <FaGlassMartiniAlt className={style.iconBody}/>
+                            <GiChickenOven className={style.iconBody}/>
                     </div>
-                    <div className={style.recipeIconTitle}>mocktail</div>
+                    <div className={style.recipeIconTitle}>Chicken</div>
+                </div>
+
+                <div className={style.recipeIconDiv}>
+                    <div className={style.recipeIcon}>
+                            <GiFullPizza className={style.iconBody}/>
+                    </div>
+                    <div className={style.recipeIconTitle}>Pizza</div>
+                </div>
+
+                <div className={style.recipeIconDiv}>
+                    <div className={style.recipeIcon}>
+                            <GiCupcake className={style.iconBody}/>
+                    </div>
+                    <div className={style.recipeIconTitle}>Dessert</div>
+                </div>
+
+                <div className={style.recipeIconDiv}>
+                    <div className={style.recipeIcon}>
+                            <SiCakephp className={style.iconBody}/>
+                    </div>
+                    <div className={style.recipeIconTitle}>Cake</div>
+                </div>
+
+                <div className={style.recipeIconDiv}>
+                    <div className={style.recipeIcon}>
+                            <GiNoodles className={style.iconBody}/>
+                    </div>
+                    <div className={style.recipeIconTitle}>Noodles</div>
+                </div>
+
+                <div className={style.recipeIconDiv}>
+                    <div className={style.recipeIcon}>
+                            <FaCocktail className={style.iconBody}/>
+                    </div>
+                    <div className={style.recipeIconTitle}>Cocktail</div>
                 </div>
 
                 <div className={style.recipeIconDiv}>

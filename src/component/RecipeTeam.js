@@ -4,9 +4,9 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 import img from '../image/food.jpg'
 
-import styles from "./styles/recipeTeam.module.css";
+import styles from "./styles/recipeteam.module.css";
 
-export default function RecipeTeam() {
+export default function recipeteam() {
   return (
     <div className={styles.recipeTeam}>
       <div className={styles.left}>
