@@ -8,7 +8,7 @@ export default function trendingRecipes() {
     <div className={styles.trendingRecipes}>
         <div className={styles.top}>
             <div className={styles.container}>
-                <h2>Tomato Recipes</h2>
+                <h2 className={styles.recipe}>Tomato Recipes</h2>
                 <p className={styles.rating}>Make the most of tomato season with these 5 star recipes.</p>
             </div>
         </div>

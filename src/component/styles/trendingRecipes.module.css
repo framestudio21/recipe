@@ -36,4 +36,24 @@
             }
         }
     }
+    @media (width <= 600px){
+        padding: 1rem;
+        .top{
+            height: 20rem;
+            padding: 1rem;
+            .container{
+                max-width: 75%;
+                padding: 1rem;
+                .recipe{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .bottom{
+            gap: 1rem;
+            .container{
+                width: calc(100% / 3 - 1rem);
+            }
+        }
+    }
 }
