@@ -1,0 +1,79 @@
+.recipebookitem{
+    display: flex;
+    padding: 2rem 5rem;
+
+    .left{
+        .img{
+            height: 100% !important;
+        }
+    }
+
+    .right{
+        padding: 1.5rem;
+        
+        .path{
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .path span{
+            text-decoration: underline;
+            text-decoration-color: var(--orange-color);
+            cursor: pointer;
+        }
+        .path :last-child{
+            text-decoration: none;
+            cursor:default;
+        }
+        .recipe{
+            margin: 1.5rem 0;
+            text-transform: capitalize;
+        }
+        .ratingsandreviews{
+            display: flex;
+            .ratings, .reviews{
+                padding: 0 1.5rem;
+                text-decoration: underline;
+                text-decoration-color: var(--orange-color);
+            }
+            .ratings{
+                border-right: 1px solid gray;
+                padding-left: 0;
+            }
+        }
+        .paragraph{
+            margin: 1rem 0;
+        }
+        .author strong, .testedby strong{
+            text-decoration: underline;
+            text-decoration-color: var(--orange-color);
+        }
+        .author span{
+            padding: 0 1.5rem;
+        }
+        .author span:first-child{
+            border-right: 1px solid gray;
+            padding-left: 0;
+        }
+        .author{
+            margin-bottom: 1rem;
+        }
+        .btns button{
+            padding: 1rem 2rem;
+            border: none;
+            text-transform: capitalize;
+            font-weight: 700;
+            background: var(--yellow-color);
+            margin: 1rem 0;
+            color: #000;
+            cursor: pointer;
+        }
+        .btns .save{
+            color: #fff;
+            background: var(--orange-color);
+        }
+        .btns button:hover{
+            background: var(--blue-color);
+            color: #fff;
+        }
+    }
+}

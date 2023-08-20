@@ -15,8 +15,9 @@ import Trending from "../component/Trending";
 import Chefcomment from "../component/chefcomment"
 import Herorecipe from "../component/herorecipe"
 import RecipeTeam from "../component/recipeteam"
-import TrendingRecipes from "@/component/trendingrecipes";
+import TrendingRecipes from "../component/trendingrecipes";
 import Hero from "../component/hero"
+import Recipebookitem from "../component/recipebookitem";
 
 
 export default dynamic(() => Promise.resolve(Home), { ssr: false });
@@ -26,6 +27,7 @@ const Home = () => {
     <Navbar/>
     <Bottomnavbar/>
     {/* <Searchbox/> */}
+    <Recipebookitem/>
     <TrendingRecipes/>
     <RecipeTeam/>
     <Herorecipe/>
