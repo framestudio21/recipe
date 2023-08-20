@@ -1,166 +1,160 @@
-.blogcarouselbody{
-    width: 100%;
-    /* height: 500px; */
-    padding: 20px 50px;
+.blogcarouselbody {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("../../image/vegetablebg.png");
+  background-size: cover;
+  gap: 50px;
+
+  & .title {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    color: var(--blue-color);
+  }
+  & .blog {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: url("../../image/vegetablebg.png");
-    background-size: cover;
     gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 
-    & .title{
-        text-transform: uppercase;
-        font-weight: 900;             
-        letter-spacing: 2px;
-        font-size: 3rem;
+    & .blogbody {
+      width: calc(100% / 3);
+      background-color: var(--background-color);
+      border-radius: 12px;
+      background-color: var(--blue-color);
+      border: 3px solid transparent;
+
+      & .blogimage {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      & .blogtext {
+        padding: 20px 10px;
+
+        & .blogtitle {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 900;
+          font-size: 1.8rem;
+          color: var(--background-color);
+        }
+        & .blogparagraph {
+          margin: 10px 0;
+          text-align: justify;
+          font-size: 13px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          -moz-line-clamp: 3;
+          -moz-box-orient: vertical;
+          letter-spacing: 1px;
+          color: var(--background-color);
+        }
+        & .bloglink {
+          font-weight: 900;
+          letter-spacing: 3px;
+          text-transform: lowercase;
+          color: var(--background-color);
+          font-size: 1.5rem;
+        }
+        & .bloglink:hover {
+          color: var(--red-color);
+        }
+      }
+    }
+    & .blogbody:hover {
+      box-shadow: var(--orange-color) 10px 10px;
+      background-color: var(--background-color);
+      border: 3px solid var(--blue-color);
+      color: #fff;
+
+      & .blogtitle {
         color: var(--blue-color);
-    }
-    & .blog{
-        display: flex;
-        gap: 50px;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        /* margin-bottom: 12px; */
-
-        & .blogbody{
-            width: calc(100% / 3);
-            background-color: var(--background-color);
-        border-radius: 12px;
-        background-color: var(--blue-color);
-        border: 3px solid transparent;
-
-
-            & .blogimage{
-                width: 100%;
-                height: 200px;
-                border-radius: 10px 10px 0 0;
-            }
-
-
-            & .blogtext{
-                padding: 20px 10px;
-
-                & .blogtitle{
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    font-weight: 900;
-                    font-size: 1.8rem;
-                    color: var(--background-color);
-                }
-                & .blogparagraph{
-                    margin: 10px 0;
-                    text-align: justify;
-                    font-size: 13px;
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    -moz-line-clamp: 3;
-                    -moz-box-orient: vertical;
-                    letter-spacing: 1px;
-                    color: var(--background-color);
-                }
-                & .bloglink{
-                    font-weight: 900;
-                    letter-spacing: 3px;
-                    text-transform: lowercase;
-                    color: var(--background-color);
-                    font-size: 1.5rem;
-                }
-                & .bloglink:hover{
-                    color: var(--red-color);
-                }
-            }
-        }
-        & .blogbody:hover{
-            box-shadow: var(--orange-color) 10px 10px;
-            background-color: var(--background-color);
-        border: 3px solid var(--blue-color);
-            color: #fff;
-
-            /* & .blogimage{
-            box-shadow: var(--blue-color) 0 3px;
-            } */
-            & .blogtitle{
-                color: var(--blue-color);
-                text-align: center;
-                letter-spacing: 2px;
-            }
-            & .blogparagraph{
-                color: var(--blue-color);
-            }
-            & .bloglink{
-                color: var(--orange-color);
-            }
-        }
-    }
-    
-    & .btn{
-        width: 100%;
-        cursor: pointer;
         text-align: center;
+        letter-spacing: 2px;
+      }
+      & .blogparagraph {
+        color: var(--blue-color);
+      }
+      & .bloglink {
+        color: var(--orange-color);
+      }
+    }
+  }
 
-        & .btnicon{
-            margin-left: 5px;
-            padding: 10px 15px;
-            border-radius: 100%;
-        }
-    }
+  & .btn {
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
 
-    & .btn button{
-        border: none;
-        outline: none;
-        background: var(--grayblue-color);
-        text-transform: uppercase;
-        font-weight: 900;
-        letter-spacing: 1px;
-        color: #fff;
-        border-radius: 30px;
-        padding: 10px 30px;
-        font-size: 1.8rem;
-        cursor: pointer;
+    & .btnicon {
+      margin-left: 5px;
+      padding: 10px 15px;
+      border-radius: 100%;
     }
-    & .btn button:first-child{
-        position: relative;
-    }
-    & .btn button:first-child::after{
-        content: " ";
-        height: 10px;
-        width: 20px;
-        position: absolute;
-        top: 50%;
-        right: -15px;
-        transform: translateY(-50%);
-        background: var(--grayblue-color);
-    }
-    & .btn a:hover button:first-child::after{
-        background-color: var(--orange-color);
-    }
-    & .btn a:hover button{
-        background-color: var(--orange-color);
-    }
+  }
 
-    @media (width <= 600px){
-        padding: 1.5rem;
-        .title{
-            text-align: center;
-        }
-        .blog{
-            gap: 1rem;
-            width: calc(100vw - 3rem);
-            display: flex;
-            overflow-x: scroll;
-            justify-content: initial;
-            align-items: initial;
-            .blogbody{
-                width: calc(100% / 2 - 2rem);
-                display: inline-block;
-                .blogimage{
-                    height: 20rem;
-                }
-            }
-        }
+  & .btn button {
+    border: none;
+    outline: none;
+    background: var(--grayblue-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  & .btn button:first-child {
+    position: relative;
+  }
+  & .btn button:first-child::after {
+    content: " ";
+    height: 10px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    background: var(--grayblue-color);
+  }
+  & .btn a:hover button:first-child::after {
+    background-color: var(--orange-color);
+  }
+  & .btn a:hover button {
+    background-color: var(--orange-color);
+  }
+
+  @media (width <= 600px) {
+    padding: 1.5rem;
+    gap: 1rem;
+    .title {
+      text-align: center;
     }
+    .blog {
+      gap: 1rem;
+      width: calc(100vw - 3rem);
+      display: flex;
+      overflow-x: scroll;
+      justify-content: initial;
+      align-items: initial;
+      .blogbody {
+        min-width: 20rem;
+        display: inline-block;
+        .blogimage {
+          height: 20rem;
+        }
+      }
+    }
+  }
 }

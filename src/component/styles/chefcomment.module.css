@@ -2,7 +2,6 @@
     width: 100%;
     padding: 40px 0;
 
-
     & .commentbody{
         width: 70vw;
         margin: 0 auto;
@@ -66,6 +65,7 @@
 
     @media (width <= 600px){
         padding: 1rem;
+        padding-left: 0;
         .commentbody{
             width: 90%;
             padding: 2rem;

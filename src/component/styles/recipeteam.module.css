@@ -107,12 +107,17 @@
         flex-direction: column;
         padding: 1.5rem;
         background: none;
+        margin-top: 0;
+        gap: 0;
         .left{
             width: 100%;
+            .paragraph{
+                margin: 1rem;
+            }
         }
         .right{
             width: calc(100% - 1rem);
-            margin-bottom: 2rem;
+            margin: 1.5rem 0;
             .profile{
                 width: calc(100% / 2 - 2rem);
             }
