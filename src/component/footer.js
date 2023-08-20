@@ -19,7 +19,8 @@ export default function footer() {
             <div className={styles.leftFooterLinkDiv}>
                 {/* <div className={styles.logo}>recipedairy.in</div> */}
                 <div className={styles.newsletter}>
-                    <div className={styles.newsletterheader}>Ready to Cook with us ?</div>
+                    {/* <div className={styles.newsletterheader}>Ready to Cook with us ?</div> */}
+                    <div className={styles.newsletterheader}>Want to get notified of our latest recipes ?</div>
                     <div className={styles.newsletterparagraph}>Sign up for our weekly newsletters!</div>
                     <div className={styles.newsletteremail}>
                         <input type="email" placeholder="enter your email" className={styles.email} />

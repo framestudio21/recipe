@@ -11,8 +11,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: url("../../image/bgvegetable.svg"), var(--blue-color);  
-    background-size: cover;  
+    background: url("../../image/bgvegetable.svg"), var(--blue-color);
+    background-size: cover;
     border-radius: 20px 20px 0 0;
 
     & .footerimage {
@@ -77,174 +77,216 @@
             margin: 25px 0;
 
             & .email {
-                padding: 15px 20px;
-                width: 60%;
-                border-radius: 10px;
-                border: none;
-                outline: none;
-                background: var(--background-color);
-                text-transform: lowercase;
-                letter-spacing: 2px;
-                font-weight: 200;
-                cursor: text;
-              }
-              & .emailbtn{
-                border: none;
-                outline: none;
-                background-color: var(--orange-color);
-                color: #fff;
-                padding: 15px 20px;
-                margin-left: 20px;
-                border-radius: 10px;
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                font-weight: 900;
-                cursor: pointer;
-              }
-              & .emailbtn:hover{
-                background: var(--yellow-color);
-                color: var(--black-color);
-              }
+              padding: 15px 20px;
+              width: 60%;
+              border-radius: 10px;
+              border: none;
+              outline: none;
+              background: var(--background-color);
+              text-transform: lowercase;
+              letter-spacing: 2px;
+              font-weight: 200;
+              cursor: text;
+            }
+            & .emailbtn {
+              border: none;
+              outline: none;
+              background-color: var(--orange-color);
+              color: #fff;
+              padding: 15px 20px;
+              margin-left: 20px;
+              border-radius: 10px;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              font-weight: 900;
+              cursor: pointer;
+            }
+            & .emailbtn:hover {
+              background: var(--yellow-color);
+              color: var(--black-color);
+            }
           }
         }
-        & .socialIconsDiv{
+        & .socialIconsDiv {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: flex-start;
+          cursor: pointer;
+          /* margin-bottom: 10px; */
+
+          & .socialIconsTitle {
+            font-weight: 200;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            color: #fff;
+            text-transform: uppercase;
+          }
+          & .socialIcons {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: flex-start;
-            cursor: pointer;
-            /* margin-bottom: 10px; */
+            gap: 20px;
 
-            & .socialIconsTitle{
-                font-weight: 200;
-                font-size: 1.2rem;
-                letter-spacing: 3px;
+            & .iconLink {
+              cursor: pointer;
+              & .icon {
+                font-size: 2.8rem;
                 color: #fff;
-                text-transform: uppercase;
+              }
+              & .icon:hover {
+                color: var(--orange-color);
+              }
             }
-            & .socialIcons{
-                display: flex;
-                gap: 20px;
-
-                & .iconLink{
-                    cursor: pointer;
-                    & .icon{
-                        font-size: 2.8rem;
-                        color: #fff;
-                    }
-                    & .icon:hover{
-                        color: var(--yellow-color);
-                    }
-                }
+            .iconLink:nth-child(2) .icon{
+              font-size: 4.08rem;
+              margin-top: -.68rem;
             }
+            .iconLink:nth-child(3) .icon{
+              font-size: 2.8rem;
+            }
+            .iconLink:nth-child(4) .icon{
+              font-size: 3.2rem;
+              margin-top: -.185rem;
+            }
+            .iconLink:nth-child(5) .icon{
+              font-size: 3.19rem;
+              margin-top: -.2rem;
+            }
+          }
         }
       }
 
-      & .rightFooterLinkDiv{
+      & .rightFooterLinkDiv {
         display: flex;
         width: 55%;
         align-items: center;
         flex-direction: column;
         /* text-transform: capitalize; */
 
-        & .rightFooterTop{
+        & .rightFooterTop {
+          width: 100%;
+        }
+        & .rightFooterTop input {
+          padding: 15px 20px;
+          width: 100%;
+          margin: 30px auto;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          background: var(--background-color);
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 200;
+        }
+        & .rightFooterTop input::placeholder {
+          text-transform: lowercase;
+        }
+        & .rightFooterBottom {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 20px;
+
+          & .rightFooterBottomColum1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 900;
+            color: #fff;
+            gap: 10px;
+          }
+          & .rightFooterBottomColum1 a {
+            position: relative;
+          }
+          & .rightFooterBottomColum1 a:hover {
+            letter-spacing: 6px;
+            color: var(--orange-color);
+          }
+          & .rightFooterBottomColum1 a:hover::after {
+            content: "";
+            height: 1px;
+            background: var(--orange-color);
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            border-radius: 5px;
+            animation: navitemanimation 2s ease forwards;
             width: 100%;
-        }
-        & .rightFooterTop input{
-            padding: 15px 20px;
-        width: 100%;
-        margin: 30px auto;
-        border-radius: 50px;
-        border: none;
-        outline: none;
-        background: var(--background-color);
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 200;
-        }
-        & .rightFooterTop input::placeholder{
+            @keyframes navitemanimation {
+              100% {
+                width: 100%;
+              }
+            }
+          }
+          & .rightFooterBottomColum2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-around;
+            font-size: 1.5rem;
             text-transform: lowercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+            gap: 10px;
+            /* color: var(--yellow-color); */
+            color: #fff;
+          }
+          & .rightFooterBottomColum2 a {
+            position: relative;
+          }
+          & .rightFooterBottomColum2 a:hover {
+            letter-spacing: 3px;
+            /* color: var(--orange-color); */
+          }
+          & .rightFooterBottomColum2 a:hover::after {
+            content: "";
+            height: 1px;
+            background: var(--orange-color);
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            border-radius: 5px;
+            animation: navitemanimation 2s ease forwards;
+            width: 100%;
+            @keyframes navitemanimation {
+              100% {
+                width: 100%;
+              }
+            }
+          }
         }
-        & .rightFooterBottom{
+      }
+    }
+  }
+
+  @media (width <= 600px) {
+    padding: 0;
+    .footerbody {
+      width: 100%;
+      .footerlink {
+        flex-direction: column;
+        align-items: baseline;
+        .leftFooterLinkDiv {
+          width: 100%;
+          .socialIconsDiv {
+            margin-bottom: 2rem;
+          }
+        }
+
+        .rightFooterLinkDiv {
+          width: 100%;
+          .rightFooterBottom {
+            padding: 0;
             width: 100%;
             display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
-
-            & .rightFooterBottomColum1{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-around;
-                font-size: 1.7rem;
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                font-weight: 900;
-                color: #fff;
-                gap: 10px;
-            }
-            & .rightFooterBottomColum1 a{
-              position: relative;
-            }
-            & .rightFooterBottomColum1 a:hover{
-                letter-spacing: 6px;
-                color: var(--orange-color);
-            }
-            & .rightFooterBottomColum1 a:hover::after{
-              content: "";
-        height: 1px;
-        background: var(--orange-color);
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        border-radius: 5px;
-        animation: navitemanimation 2s ease forwards;
-        width: 100%;
-        @keyframes navitemanimation{
-            100% {
-                width: 100%;
-                
-            }
-        }
-          }
-            & .rightFooterBottomColum2{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                justify-content: space-around;
-                font-size: 1.5rem;
-                text-transform: lowercase;
-                letter-spacing: 2px;
-                font-weight: 900;
-                gap: 10px;
-                /* color: var(--yellow-color); */
-                color: #fff;
-            }
-            & .rightFooterBottomColum2 a{
-              position: relative;
-            }
-            & .rightFooterBottomColum2 a:hover{
-                letter-spacing: 3px;
-                /* color: var(--orange-color); */
-            }
-            & .rightFooterBottomColum2 a:hover::after{
-              content: "";
-        height: 1px;
-        background: var(--orange-color);
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        border-radius: 5px;
-        animation: navitemanimation 2s ease forwards;
-        width: 100%;
-        @keyframes navitemanimation{
-            100% {
-                width: 100%;
-                
-            }
-        }
           }
         }
+      }
+      .footerimage {
+        margin-bottom: -5rem;
       }
     }
   }
