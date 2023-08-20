@@ -4,9 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    background: url("../../image/vegetablebg3.png");
-    background-size: contain;
+    justify-content: space-between; 
 
     & .title{
         width: 100%;
