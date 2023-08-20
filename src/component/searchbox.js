@@ -6,7 +6,8 @@ import { GrClose } from 'react-icons/gr';
 
 export default function searchbox() {
   return (
-    <div className={styles.searchbox}>
+    <div className={styles.searchboxMainbody}>
+      <div className={styles.searchbox}>
         <div className={styles.search}>
             <input type="search" placeholder="Search a recipe..."/>
         </div>
@@ -21,6 +22,7 @@ export default function searchbox() {
 
         </div>
         <button className={styles.closebtn}><GrClose/></button>
+    </div>
     </div>
   )
 }

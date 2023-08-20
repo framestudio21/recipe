@@ -1,58 +1,43 @@
+.sidenavbarMainbody{
+width: 100%;
+height: calc(100vh - 120px);
+overflow: hidden;
+z-index: 3;
+background: rgba(0, 0, 0, 0.5);
+position: fixed;
+top: 120px;
+left: 0;
+
+
 .sidenavbar{
-    width: 100vw;
+    width: 40rem;
     height: calc(100vh - 120px);
-    background: rgba(0, 0, 0, 0.2);
     list-style: none;
-    overflow-y: scroll;
-    
-    & .sidenavbarlist{
-        width: 45rem;
-        height: calc(100vh - 120px);
-        background-color: #fff;
-        padding: 20px 20px 10px 50px;
-        position: relative;
+    background-color: var(--background-color);
+    border-right: 3px solid var(--blue-color);
+    box-shadow: var(--orange-color) 10px 0;
+    position: relative;
+}
+.closebtn{
+    position: absolute;
+    left: 42rem;
+    top: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 4rem;
+    color: var(--background-color);
+    cursor: pointer;
 
-        & .closebtn{
-            position: absolute;
-            right: -5rem;
-            top: 1rem;
-            border: none;
-            outline: none;
-            background: none;
-            font-size: 4rem;
-            /* color: red; */
-        }
-
-        & .sideNavbarlistItemDiv{
-            width: 100%;
-            margin-bottom: 2.5rem;
-            position: relative;
-
-            & .sideNavbarlistItemDivTitle{
-                font-size: 2.3rem;
-                text-transform: uppercase;
-                font-weight: 700;
-                letter-spacing: 2px;
-                margin-bottom: 0.5rem;
-            }
-
-            & .sideNavbarItem{
-                font-weight: 200;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 0.3rem;
-            }
-        }
-        & .sideNavbarlistItemDiv::after{
-            position: absolute;
-            content: " ";
-            height: 1px;
-            width: 100%;
-            background: #000;
-            bottom: -8px;
-        }
+    & .btnicon{
+        border: 2px solid var(--background-color);
+        border-radius: 20px;
     }
+}
+.closebtn:hover{
+    color: var(--orange-color);
+    & .btnicon{
+        border: 2px solid var(--blue-color);
+    }
+}
 }

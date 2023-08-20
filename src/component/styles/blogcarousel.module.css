@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url("../../image/vegetablebg.png");
-  background-size: cover;
+  background: url("../../image/bgvegetable2.svg");
+  background-size: contain;
   gap: 50px;
 
   & .title {

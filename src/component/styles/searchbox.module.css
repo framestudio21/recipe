@@ -1,10 +1,23 @@
+.searchboxMainbody{
+width: 100%;
+height: calc(100vh - 120px);
+z-index: 2;
+position: fixed;
+top: 120px;
+left: 0;
+background: rgba(0, 0, 0, 0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+
 .searchbox{
-    height: 60vh;
+    height: 70vh;
     width: 60%;
-    margin: 50px auto 0;
     background: rgb(255, 255, 255);
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--blue-color);
+    box-shadow: var(--orange-color) 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -15,17 +28,25 @@
     }
     & .search > input{
         padding: 15px 20px;
-        width: 60%;
+        width: 90%;
         margin: 30px auto;
         border-radius: 50px;
-        border: none;
         outline: none;
-        background: var(--background-color);
+        border: none;
+        background: var(--blue-color);
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 200;
+        color: #fff;
+    }
+    & .search > input:active{
+        box-shadow: var(--orange-color) 0.8rem 0.8rem;
+    }
+    & .search > input:hover{
+        box-shadow: var(--orange-color) 0.8rem 0.8rem;
     }
     & .search > input::placeholder{
+        color: #fff;
         text-transform: lowercase;
     }
     & .listItem{
@@ -35,7 +56,7 @@
         flex-wrap: wrap;
         & .searchList{
             list-style: none;
-            border: 1px solid transparent;
+            border: 2px solid transparent;
             padding: 6px 20px;
             font-size: 20px;
             font-weight: 200;
@@ -46,7 +67,8 @@
             text-transform: uppercase;
             border-radius: 5rem;
             &.searchList:hover{
-                border: 1px solid #000;
+                border: 2px solid var(--blue-color);
+                box-shadow: var(--orange-color) 5px 5px;
             }
         }
     }
@@ -59,4 +81,5 @@
         font-size: 2.5rem;
         cursor: pointer;
     }
+}
 }

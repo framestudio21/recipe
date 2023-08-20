@@ -2,7 +2,8 @@
   width: 100%;
   overflow: hidden;
   padding: 0 50px;
-  background: url("../../image/vegetablebg5.png");
+  /* background: url("../../image/vegetablebg5.png"); */
+  background: url("../../image/food-background.svg");
   background-size: contain;
 
   & .footerbody {

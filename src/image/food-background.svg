@@ -4,7 +4,7 @@
 	 viewBox="0 0 750 500" style="enable-background:new 0 0 750 500;" xml:space="preserve">
 <g id="BACKGRUND">
 	<rect x="0" y="0" 
-	style="fill:#fff;" 
+	style="fill:#fff; opacity: 0.1;" 
 	width="750" height="500"/>
 </g>
 <g id="OBJECTS">
