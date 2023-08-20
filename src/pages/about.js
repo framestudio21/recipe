@@ -25,8 +25,8 @@ const About = () => {
       <Navbar />
       <Bottomnavbar/>
 
-      <Hero/>
-      <Whatnew/>
+      {/* <Hero/> */}
+      {/* <Whatnew/> */}
 
       <div className={styles.about}>
         <div className={styles.sideNavbar}>
