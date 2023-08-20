@@ -1,0 +1,64 @@
+.itempage{
+    padding: 2rem 5rem;
+    .recipe{
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+    .top{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        .images{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 20%;
+            .img{
+                width: 100% !important;
+            }
+        }
+        .process{
+            width: 40%;
+        }
+        .tips{
+            width: 40%;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        gap: 2rem;
+        .statistic, .reviews{
+            width: 50%;
+            padding: 2rem 0;
+        }
+        .statistic{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media (width <= 600px){
+        padding: 1.5rem;
+        .top{
+            flex-direction: column;
+            .images, .process, .tips{
+                width: 100%;
+            }
+            .images{
+                overflow: scroll;
+                flex-direction: row;
+            }
+            .heading{
+                text-align: center;
+            }
+        }
+        .bottom{
+            flex-direction: column;
+            .statistic, .reviews{
+                width: 100%;
+            }
+        }
+        
+    }
+}

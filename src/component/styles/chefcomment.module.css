@@ -64,10 +64,10 @@
     }
 
     @media (width <= 600px){
-        padding: 1rem;
-        padding-left: 0;
+        padding: 1.5rem;
+        padding-left: .5rem;
         .commentbody{
-            width: 90%;
+            width: calc(100% - 2.5rem);
             padding: 2rem;
             justify-content: space-between;
             .commentimagebody{
