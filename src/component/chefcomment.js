@@ -15,7 +15,7 @@ export default function chefcomment() {
             </div>
             <div className={styles.commenttextbody}>
               <BsFillChatLeftQuoteFill className={styles.icon}/>
-              <div className={styles.text}>becoming a cook is my dream since i was little, and here i have found a way to make it happen.</div>
+              <div className={styles.text}>becoming a cook is my dream since I was little, and here I have found a way to make it happen.</div>
               <div className={styles.author}>
                 <div className={styles.name}>bran warrant</div>
                 <div className={styles.title}>professional chef</div>

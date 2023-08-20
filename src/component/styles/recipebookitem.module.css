@@ -76,4 +76,34 @@
             color: #fff;
         }
     }
+
+    @media (width <= 600px){
+        flex-direction: column;
+        padding: 1.5rem;
+        position: relative;
+        .left .img{
+            width: 100%;
+            margin-top: 5rem;
+        }
+        .right{
+            padding: 0px;
+            .path{
+                position: absolute;
+                top: 1.5rem;
+                left: 1.5rem;
+            }
+            .recipe{
+                margin: 1rem 0;
+            }
+            .author span{
+                display: block;
+                padding: 0;
+                line-height: 2.2rem;
+                border: none !important;
+            }
+            .btns button{
+                padding: 1.5rem 3rem;
+            }
+        }
+    }
 }
