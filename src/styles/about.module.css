@@ -83,6 +83,7 @@
     }
     @media (width <= 600px) {
         padding: 1rem;
+        padding-top: 3rem;
         height: initial;
         .sideNavbar{
             display: none;

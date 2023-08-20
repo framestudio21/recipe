@@ -1,8 +1,10 @@
+import dynamic from 'next/dynamic';
 import Navbar from "../../component/navbar"
 import Footer from "../../component/footer"
 import Sign from "../../component/sign"
 
-export default function login() {
+export default dynamic(() => Promise.resolve(Login), { ssr: false });
+function Login() {
   return (
     <>
     {/* <Navbar/> */}

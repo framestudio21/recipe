@@ -137,6 +137,7 @@
 
   @media (width <= 600px) {
     padding: 1.5rem;
+    padding-top: 3rem;
     gap: 1rem;
     .title {
       text-align: center;
