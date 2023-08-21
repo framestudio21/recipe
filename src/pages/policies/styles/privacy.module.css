@@ -1,0 +1,44 @@
+.privacypolicy{
+    padding: 2rem;
+    width: 60%;
+    margin: auto;
+    .paragraph,.ul .list{
+        text-align: justify;
+        line-height: 2.2rem;
+    }
+    .heading1{
+        text-align: center;
+        padding: 2rem 0;
+        border: 2px solid #000;
+    }
+    .date{
+        margin: 2rem 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.2rem;
+        text-decoration: underline;
+    }
+
+    .heading2{
+        margin: 2rem 0;
+    }
+    .heading3{
+        margin: 1.5rem 0;
+    }
+    .heading4{
+        margin: 1rem 0;
+    }
+    .url{
+        color: crimson;
+    }
+    .ul{
+        padding-left: 1.5rem;
+        .list{
+            margin: 1rem 0;
+        }
+    }
+    @media (width <= 600px){
+        padding: 2rem;
+        width: 100%;
+    }
+}
