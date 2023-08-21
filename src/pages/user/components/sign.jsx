@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import img from '../image/food.jpg'
-import styles from './styles/sign.module.css'
+import img from '../../../image/food.jpg'
+import styles from '../styles/sign.module.css'
 
 export default function sign(props) {
     const handleSubmit = (e) =>{
@@ -41,6 +41,7 @@ export default function sign(props) {
             {props.reset && <div className={styles.container}>
                 <Link href='#' className={styles.resetPass}>Forgotten Password?</Link>
             </div>}
+            <div className=''><Link href={props.url}>{props.urltext}</Link></div>
             <div className={styles.container}>
                 <button type='submit' className={styles.btn}>{props.btn}</button>
             </div>
