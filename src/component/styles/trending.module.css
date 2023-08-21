@@ -14,15 +14,20 @@
         
         & .child{
             min-width: calc(100% / 7.5 - 10px);
-            border: 1px solid black;
+            border: 3px solid var(--blue-color);
             height: 30rem;
             border-radius: 12px;
             cursor: pointer;
             position: relative;
             /* margin-right: 10px; */
+             .image{
+                width: 100%;
+            border-radius: 10px;
+            height: 100%;
+             }
         }
         & .child:hover {
-            width: 300px;
+            width: 42rem;
             transition: all 2s ease;
         }
         & .child:hover::after{
@@ -38,7 +43,7 @@
             transition: all 2s ease;
         }
         & .child:first-child{
-            width: 250px;
+            width: 30rem;
         }
         & .child:first-child::after{
             content: "";

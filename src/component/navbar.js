@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { FaSearch, FaBell } from 'react-icons/fa';
+import { BiSolidUser } from 'react-icons/bi';
 
 import styles from "./styles/navbar.module.css"
 
@@ -19,6 +20,7 @@ export default function navbar() {
         <div className={styles.navbaricon}>
         <div className={styles.search}><FaSearch/></div>
         <div className={styles.notification}><FaBell/></div>
+        <div className={styles.user}><BiSolidUser/></div>
         </div>
     </div>
     </>

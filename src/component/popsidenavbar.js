@@ -13,6 +13,7 @@ export default function popsidenavbar() {
             <Link href="#" className={styles.sideNavbarItemListLink}>vegeterian <BsArrowBarRight/></Link>
             <Link href="#" className={styles.sideNavbarItemListLink}>non-vegeterian <BsArrowBarRight/></Link>
             </div>
+
             <div className={styles.sideNavbarItemList}>
             <p>State</p>
             <Link href="#" className={styles.sideNavbarItemListLink}>West Bengal <BsArrowBarRight/></Link>
@@ -20,6 +21,23 @@ export default function popsidenavbar() {
             <Link href="#" className={styles.sideNavbarItemListLink}>Manipur <BsArrowBarRight/></Link>
             <Link href="#" className={styles.sideNavbarItemListLink}>Oridsha <BsArrowBarRight/></Link>
             </div>
+            
+            <div className={styles.sideNavbarItemList}>
+            <p>State</p>
+            <Link href="#" className={styles.sideNavbarItemListLink}>West Bengal <BsArrowBarRight/></Link>
+            <Link href="#" className={styles.sideNavbarItemListLink}>Sikim <BsArrowBarRight/></Link>
+            <Link href="#" className={styles.sideNavbarItemListLink}>Manipur <BsArrowBarRight/></Link>
+            <Link href="#" className={styles.sideNavbarItemListLink}>Oridsha <BsArrowBarRight/></Link>
+            </div>
+            
+            <div className={styles.sideNavbarItemList}>
+            <p>State</p>
+            <Link href="#" className={styles.sideNavbarItemListLink}>West Bengal <BsArrowBarRight/></Link>
+            <Link href="#" className={styles.sideNavbarItemListLink}>Sikim <BsArrowBarRight/></Link>
+            <Link href="#" className={styles.sideNavbarItemListLink}>Manipur <BsArrowBarRight/></Link>
+            <Link href="#" className={styles.sideNavbarItemListLink}>Oridsha <BsArrowBarRight/></Link>
+            </div>
+            
         </div>
     </>
   )

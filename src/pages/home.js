@@ -11,7 +11,6 @@ import Popsidenavbar from "../component/popsidenavbar";
 import Blogcarousel from "../component/blogcarousel";
 import Gallerycarousel from "../component/gallerycarousel";
 import Footer from "../component/footer"
-import Trending from "../component/Trending";
 import Chefcomment from "../component/chefcomment"
 import Herorecipe from "../component/herorecipe"
 import RecipeTeam from "../component/recipeteam"
@@ -26,14 +25,15 @@ const Home = () => {
     <>
     <Navbar/>
     <Bottomnavbar/>
-    <Sidenavbar/>
+    {/* <Sidenavbar/> */}
+    {/* <Popsidenavbar/> */}
     {/* <Searchbox/> */}
-    <Recipebookitem/>
-    <TrendingRecipes/>
-    <RecipeTeam/>
+    {/* <Recipebookitem/> */}
+    <Hero/>
     <Herorecipe/>
     <Chefcomment/>
-    {/* <Trending/> */}
+    <RecipeTeam/>
+    <TrendingRecipes/>
     <Blogcarousel/>
     <Gallerycarousel/>
     <Footer/>

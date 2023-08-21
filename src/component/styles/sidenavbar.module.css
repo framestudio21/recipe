@@ -1,9 +1,10 @@
 .sidenavbarMainbody{
 width: 100%;
+background-size: cover;
 height: calc(100vh - 120px);
 overflow: hidden;
 z-index: 3;
-background: rgba(0, 0, 0, 0.5);
+background: url("../../image/bgvegetable.svg"), rgba(0, 0, 0, 0.5);
 position: fixed;
 top: 120px;
 left: 0;
@@ -13,10 +14,59 @@ left: 0;
     width: 40rem;
     height: calc(100vh - 120px);
     list-style: none;
-    background-color: var(--background-color);
+    background: url("../../image/sidenavbarbg.svg"), var(--background-color);
+    background-size: cover;
     border-right: 3px solid var(--blue-color);
     box-shadow: var(--orange-color) 10px 0;
     position: relative;
+    padding: 10px 10px 10px 50px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    .sideNavbarlist{
+        padding: 10px 0;
+        position: relative;
+        margin-bottom: 10px;
+
+
+        .sideNavbarItem{
+            text-transform: uppercase;
+            font-weight: 200;
+            letter-spacing: 2px;
+            padding: 2px 0;
+            display: flex;
+            justify-content: space-between;
+            color: var(--blue-color);
+
+            .icon{
+                font-weight: 900;
+                font-size: 2rem;
+                color: var(--orange-color);
+            }
+        }
+        .sideNavbarItem:hover{
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+        .sideNavbarlistItemDivTitle{
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 3px;
+            font-size: 1.8rem;
+            padding: 5px 0;
+            color: var(--red-color);
+        }
+    }
+    .sideNavbarlist::after{
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 0.2rem;
+        border-radius: 12px;
+        background: var(--blue-color);
+        content: "";
+    }
 }
 .closebtn{
     position: absolute;

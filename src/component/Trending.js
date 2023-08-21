@@ -1,22 +1,39 @@
-import { useEffect } from 'react'
-import styles from './styles/trending.module.css'
-export default function Trending() {
+import { useEffect } from "react";
+import Image from "next/image";
 
-    useEffect(()=>{
-    },[])
+import styles from "./styles/trending.module.css";
+
+import img from "../image/img1.jpg";
+
+export default function Trending() {
+  useEffect(() => {}, []);
 
   return (
     <div className={styles.trending}>
-        <div className={styles.list}>
-            <div className={styles.child}>1</div>
-            <div className={styles.child}>2</div>
-            <div className={styles.child}>3</div>
-            <div className={styles.child}>4</div>
-            <div className={styles.child}>5</div>
-            <div className={styles.child}>6</div>
-            <div className={styles.child}>7</div>
+      <div className={styles.list}>
+        <div className={styles.child}>
+          <Image src={img} width={0} height={0} className={styles.image}/>
         </div>
-        <div className={styles.btm}></div>
+        <div className={styles.child}>
+          <Image src={img} width={0} height={0} className={styles.image}/>
+        </div>
+        <div className={styles.child}>
+          <Image src={img} width={0} height={0} className={styles.image}/>
+        </div>
+        <div className={styles.child}>
+          <Image src={img} width={0} height={0} className={styles.image}/>
+        </div>
+        <div className={styles.child}>
+          <Image src={img} width={0} height={0} className={styles.image}/>
+        </div>
+        <div className={styles.child}>
+          <Image src={img} width={0} height={0} className={styles.image}/>
+        </div>
+        <div className={styles.child}>
+          <Image src={img} width={0} height={0} className={styles.image}/>
+        </div>
+      </div>
+      <div className={styles.btm}></div>
     </div>
-  )
+  );
 }

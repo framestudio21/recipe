@@ -10,8 +10,7 @@ export default function () {
     <>
       <div className={styles.sidenavbarMainbody}>
         <div className={styles.sidenavbar}>
-          <div className={styles.sidenavbarlist}>
-            <div className={styles.sideNavbarlistItemDiv}>
+            <div className={styles.sideNavbarlist}>
               <Link href="#">
                 <li className={styles.sideNavbarItem}>Trending List</li>
               </Link>
@@ -19,38 +18,68 @@ export default function () {
                 <li className={styles.sideNavbarItem}>New Update</li>
               </Link>
             </div>
-            <div className={styles.sideNavbarlistItemDiv}>
+
+            <div className={styles.sideNavbarlist}>
               <p className={styles.sideNavbarlistItemDivTitle}>Indian Recipe</p>
-              <Link href="#">
-                <li className={styles.sideNavbarItem}>
+              <Link href="#" className={styles.sideNavbarItem}>
                   Trending List
-                  <BsArrowBarRight />
-                </li>
+                  <BsArrowBarRight className={styles.icon} />
               </Link>
-              <Link href="#">
-                <li className={styles.sideNavbarItem}>
+              <Link href="#" className={styles.sideNavbarItem}>
                   New Update
-                  <BsArrowBarRight />
-                </li>
+                  <BsArrowBarRight className={styles.icon} />
               </Link>
             </div>
-            <div className={styles.sideNavbarlistItemDiv}>
+            
+            <div className={styles.sideNavbarlist}>
               <p className={styles.sideNavbarlistItemDivTitle}>Indian Recipe</p>
-              <Link href="#">
-                <li className={styles.sideNavbarItem}>
+              <Link href="#" className={styles.sideNavbarItem}>
                   Trending List
-                  <BsArrowBarRight />
-                </li>
+                  <BsArrowBarRight className={styles.icon} />
               </Link>
-              <Link href="#">
-                <li className={styles.sideNavbarItem}>
+              <Link href="#" className={styles.sideNavbarItem}>
                   New Update
-                  <BsArrowBarRight />
-                </li>
+                  <BsArrowBarRight className={styles.icon} />
               </Link>
             </div>
+            
+            <div className={styles.sideNavbarlist}>
+              <p className={styles.sideNavbarlistItemDivTitle}>Indian Recipe</p>
+              <Link href="#" className={styles.sideNavbarItem}>
+                  Trending List
+                  <BsArrowBarRight className={styles.icon} />
+              </Link>
+              <Link href="#" className={styles.sideNavbarItem}>
+                  New Update
+                  <BsArrowBarRight className={styles.icon} />
+              </Link>
+            </div>
+            
+            <div className={styles.sideNavbarlist}>
+              <p className={styles.sideNavbarlistItemDivTitle}>Indian Recipe</p>
+              <Link href="#" className={styles.sideNavbarItem}>
+                  Trending List
+                  <BsArrowBarRight className={styles.icon} />
+              </Link>
+              <Link href="#" className={styles.sideNavbarItem}>
+                  New Update
+                  <BsArrowBarRight className={styles.icon} />
+              </Link>
+            </div>
+            
+            <div className={styles.sideNavbarlist}>
+              <p className={styles.sideNavbarlistItemDivTitle}>Indian Recipe</p>
+              <Link href="#" className={styles.sideNavbarItem}>
+                  Trending List
+                  <BsArrowBarRight className={styles.icon} />
+              </Link>
+              <Link href="#" className={styles.sideNavbarItem}>
+                  New Update
+                  <BsArrowBarRight className={styles.icon} />
+              </Link>
+            </div>
+            
           </div>
-        </div>
         <button className={styles.closebtn}>
           <AiFillCloseCircle className={styles.btnicon} />
         </button>
