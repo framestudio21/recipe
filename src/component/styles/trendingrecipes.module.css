@@ -1,6 +1,8 @@
 .trendingRecipes{
     padding: 1rem 5rem;
-    background: url("../../image/bgvegetable2.svg");
+    background: url("../../image/bgvegetable2.svg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
     /* height: calc(100vh - 120px); */
     /* margin-bottom: 10px; */
     .top{
@@ -116,9 +118,10 @@
                     }
 
                     & .bottomBar{
-                        width: .2rem;
+                        width: .25rem;
                         height: 5.5rem;
                         background-color: #fff;
+                        border-radius: 12px;
                     }
                     
                     & .recipeTime{
@@ -145,6 +148,23 @@
                                 font-size: 1.7rem;
                             }
                         }
+                    }
+                }
+                & .ratingBottom{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & .stars{
+                        display: flex;
+                        gap: 8px;
+                        & .starsIcon{
+                            font-size: 1.8rem;
+                        }
+                    }
+                    & .rating{
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                        text-transform: lowercase;
                     }
                 }
             }

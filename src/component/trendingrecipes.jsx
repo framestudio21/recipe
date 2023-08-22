@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { PiClockCountdownFill } from 'react-icons/pi';
-import { BiSolidUser } from 'react-icons/bi';
+import { BiSolidUser, BiStar } from 'react-icons/bi';
 
 import img from '../image/img1.jpg'
 import styles from './styles/trendingrecipes.module.css'
@@ -36,6 +36,19 @@ export function Recipecontainer () {
                             <div className={styles.time}>1h30min</div>
                         </div>
                     </div>
+                </div>
+                <div className={styles.nameBar}></div>
+                <div className={styles.ratingBottom}>
+                <div className={styles.stars}>
+                    <BiStar className={styles.starsIcon}/>
+                    <BiStar className={styles.starsIcon}/>
+                    <BiStar className={styles.starsIcon}/>
+                    <BiStar className={styles.starsIcon}/>
+                    <BiStar className={styles.starsIcon}/>
+                </div>
+                <div className={styles.rating}>
+                    760 rating
+                </div>
                 </div>
                 </div>
             </div>

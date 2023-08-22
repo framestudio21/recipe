@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import img from "../image/food.jpg"
+import foodlogo from "../image/line-fruit.svg"
 import { TbMathGreater } from 'react-icons/tb'
-import { BsArrowRightShort } from 'react-icons/bs'
+import { BiSolidUser } from 'react-icons/bi'
+import { PiClockCountdownFill } from 'react-icons/pi'
 
 import styles from './styles/hero.module.css'
 
@@ -24,151 +26,212 @@ export default function Hero() {
         </div>
 
         <div className={styles.right}>
-            <div className={styles.heading}>A plateful of veggies 
-            {/* <BsArrowRightShort className={styles.icon}/> */}
+            <div className={styles.headerimg}>
+                <Image src={foodlogo} width={0} height={0} alt='food' className={styles.foodimg}/>
             </div>
+            {/* <div className={styles.heading}>A plateful of veggies 
+            <BsArrowRightShort className={styles.icon}/>
+            </div> */}
             <div className={styles.items}>
 
-            <div className={styles.container}>
+            <Link href="#">
+                <div className={styles.recipecard}>
+                <div className={styles.cardimg}>
                 <Image
-                    width={250}
-                    height={160}
+                    width={0}
+                    height={0}
                     objectFit="cover"
                     src={img}
                     alt="img"
-                    className={styles.img}
+                    className={styles.image}
                 />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
+                </div>
+                <div className={styles.cardmatter}>
+                <div className={styles.cardtag}>dinner</div>
+                <div className={styles.cardname}>cuban ropa vieja</div>
+                <div className={styles.cardbar}></div>
+                <div className={styles.carddetail}>
+                <div className={styles.cardperson}>
+                    <div className={styles.serving}>serving</div>
+                    <div className={styles.personicon}><BiSolidUser/><BiSolidUser/><BiSolidUser/></div>
+                </div>
+                <div className={styles.carddetailbar}></div>
+                <div className={styles.cardtime}>
+                    <div className={styles.cooktime}>cook time</div>
+                    <div className={styles.time}>
+                    1h30min
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
+            </Link>
 
-            <div className={styles.container}>
+            <Link href="#">
+                <div className={styles.recipecard}>
+                <div className={styles.cardimg}>
                 <Image
-                    width={250}
-                    height={160}
+                    width={0}
+                    height={0}
                     objectFit="cover"
                     src={img}
                     alt="img"
-                    className={styles.img}
+                    className={styles.image}
                 />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
+                </div>
+                <div className={styles.cardmatter}>
+                <div className={styles.cardtag}>dinner</div>
+                <div className={styles.cardname}>cuban ropa vieja</div>
+                <div className={styles.cardbar}></div>
+                <div className={styles.carddetail}>
+                <div className={styles.cardperson}>
+                    <div className={styles.serving}>serving</div>
+                    <div className={styles.personicon}><BiSolidUser/><BiSolidUser/><BiSolidUser/></div>
+                </div>
+                <div className={styles.carddetailbar}></div>
+                <div className={styles.cardtime}>
+                    <div className={styles.cooktime}>cook time</div>
+                    <div className={styles.time}>
+                    1h30min
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
-
-            <div className={styles.container}>
+            </Link>
+ 
+            <Link href="#">
+                <div className={styles.recipecard}>
+                <div className={styles.cardimg}>
                 <Image
-                    width={250}
-                    height={160}
+                    width={0}
+                    height={0}
                     objectFit="cover"
                     src={img}
                     alt="img"
-                    className={styles.img}
+                    className={styles.image}
                 />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
+                </div>
+                <div className={styles.cardmatter}>
+                <div className={styles.cardtag}>dinner</div>
+                <div className={styles.cardname}>cuban ropa vieja</div>
+                <div className={styles.cardbar}></div>
+                <div className={styles.carddetail}>
+                <div className={styles.cardperson}>
+                    <div className={styles.serving}>serving</div>
+                    <div className={styles.personicon}><BiSolidUser/><BiSolidUser/><BiSolidUser/></div>
+                </div>
+                <div className={styles.carddetailbar}></div>
+                <div className={styles.cardtime}>
+                    <div className={styles.cooktime}>cook time</div>
+                    <div className={styles.time}>
+                    1h30min
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
-
-            <div className={styles.container}>
+            </Link>
+ 
+            <Link href="#">
+                <div className={styles.recipecard}>
+                <div className={styles.cardimg}>
                 <Image
-                    width={250}
-                    height={160}
+                    width={0}
+                    height={0}
                     objectFit="cover"
                     src={img}
                     alt="img"
-                    className={styles.img}
+                    className={styles.image}
                 />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
+                </div>
+                <div className={styles.cardmatter}>
+                <div className={styles.cardtag}>dinner</div>
+                <div className={styles.cardname}>cuban ropa vieja</div>
+                <div className={styles.cardbar}></div>
+                <div className={styles.carddetail}>
+                <div className={styles.cardperson}>
+                    <div className={styles.serving}>serving</div>
+                    <div className={styles.personicon}><BiSolidUser/><BiSolidUser/><BiSolidUser/></div>
+                </div>
+                <div className={styles.carddetailbar}></div>
+                <div className={styles.cardtime}>
+                    <div className={styles.cooktime}>cook time</div>
+                    <div className={styles.time}>
+                    1h30min
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
-
-            <div className={styles.container}>
+            </Link>
+ 
+            <Link href="#">
+                <div className={styles.recipecard}>
+                <div className={styles.cardimg}>
                 <Image
-                    width={250}
-                    height={160}
+                    width={0}
+                    height={0}
                     objectFit="cover"
                     src={img}
                     alt="img"
-                    className={styles.img}
+                    className={styles.image}
                 />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
+                </div>
+                <div className={styles.cardmatter}>
+                <div className={styles.cardtag}>dinner</div>
+                <div className={styles.cardname}>cuban ropa vieja</div>
+                <div className={styles.cardbar}></div>
+                <div className={styles.carddetail}>
+                <div className={styles.cardperson}>
+                    <div className={styles.serving}>serving</div>
+                    <div className={styles.personicon}><BiSolidUser/><BiSolidUser/><BiSolidUser/></div>
+                </div>
+                <div className={styles.carddetailbar}></div>
+                <div className={styles.cardtime}>
+                    <div className={styles.cooktime}>cook time</div>
+                    <div className={styles.time}>
+                    1h30min
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
-
-            <div className={styles.container}>
+            </Link>
+ 
+            <Link href="#">
+                <div className={styles.recipecard}>
+                <div className={styles.cardimg}>
                 <Image
-                    width={250}
-                    height={160}
+                    width={0}
+                    height={0}
                     objectFit="cover"
                     src={img}
                     alt="img"
-                    className={styles.img}
+                    className={styles.image}
                 />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
+                </div>
+                <div className={styles.cardmatter}>
+                <div className={styles.cardtag}>dinner</div>
+                <div className={styles.cardname}>cuban ropa vieja</div>
+                <div className={styles.cardbar}></div>
+                <div className={styles.carddetail}>
+                <div className={styles.cardperson}>
+                    <div className={styles.serving}>serving</div>
+                    <div className={styles.personicon}><BiSolidUser/><BiSolidUser/><BiSolidUser/></div>
+                </div>
+                <div className={styles.carddetailbar}></div>
+                <div className={styles.cardtime}>
+                    <div className={styles.cooktime}>cook time</div>
+                    <div className={styles.time}>
+                    1h30min
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
-            
-            <div className={styles.container}>
-                <Image
-                    width={250}
-                    height={160}
-                    objectFit="cover"
-                    src={img}
-                    alt="img"
-                    className={styles.img}
-                />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
-            </div>
-            
-            <div className={styles.container}>
-                <Image
-                    width={250}
-                    height={160}
-                    objectFit="cover"
-                    src={img}
-                    alt="img"
-                    className={styles.img}
-                />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
-            </div>
-            
-            <div className={styles.container}>
-                <Image
-                    width={250}
-                    height={160}
-                    objectFit="cover"
-                    src={img}
-                    alt="img"
-                    className={styles.img}
-                />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
-            </div>
-            
-            <div className={styles.container}>
-                <Image
-                    width={250}
-                    height={160}
-                    objectFit="cover"
-                    src={img}
-                    alt="img"
-                    className={styles.img}
-                />
-                <p className={styles.tag}>caribban</p>
-                <h3 className={styles.recipeName}>Cuban Ropa Vieja</h3>
-                <p className={styles.rating}>736 Ratings</p>
-            </div>
-            
+            </Link>
+             
             </div>
         </div>
     </div>

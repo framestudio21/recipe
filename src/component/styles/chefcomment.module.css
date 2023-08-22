@@ -1,8 +1,13 @@
 .chefcomment{
     width: 100%;
-    padding: 40px 0;
-    background: url("../../image/food-background.svg");
+    margin: 10px 0 20px 0;
+    /* background: url("../../image/bgvegetable2.svg"); */
+    /* padding: 40px 0; */
+    /* background: url("../../image/bgvegetable3.svg"); */
     background-size: cover;
+    /* background-image: url(); */
+    /* background: none; */
+    /* background: url(--vg3-background); */
 
     & .commentbody{
         width: 70vw;
